@@ -41,12 +41,12 @@ const data = [
 
 const resolvers = {
 	Query: {
-		GetLocations: () => data,
+		locations: () => data,
 	},
 };
 const typeDefs = `#graphql
 
-  type locations {
+  type Location {
     id: String
     name: String
     description: String
@@ -54,7 +54,7 @@ const typeDefs = `#graphql
   }
 
   type Query {
-    GetLocations: [locations]
+    locations: [Location]
   }
 `;
 

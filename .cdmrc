@@ -1,6 +1,6 @@
 tabs: ["client/src/App.jsx", "server/index.js"]
 terminals:
   [
-    "cd client && yarn install && yarn dev",
+    "cd client && echo VITE_PUBLIC_HOSTNAME=$PUBLIC_HOSTNAME >> .env && yarn install && yarn dev",
     "cd server && yarn install && node index.js",
   ]
