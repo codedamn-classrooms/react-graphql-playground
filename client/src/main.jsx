@@ -4,9 +4,7 @@ import App from "./App";
 import "./index.css";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
-const URI = `https://${import.meta.env.VITE_PUBLIC_HOSTNAME}/:${
-	import.meta.env.PUBLIC_PORT
-}`;
+const URI = `https://${import.meta.env.VITE_PUBLIC_HOSTNAME}:1338`;
 const client = new ApolloClient({
 	uri: URI,
 	cache: new InMemoryCache(),
